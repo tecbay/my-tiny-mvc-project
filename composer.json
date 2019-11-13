@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "classmap": [
+        "./"
+    ],
+    "files": [
+      "foundation/Helpers.php"
+    ]
+  },
+  "require": {
+    "rakit/validation": "^1.2"
+  }
+}
