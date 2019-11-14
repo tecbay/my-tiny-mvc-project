@@ -32,6 +32,8 @@ class Router {
 				);
 			}
 			$controllerObj->$classMethod();
+		else:
+			view( 'pages.404' );
 		endif;
 	}
 }
