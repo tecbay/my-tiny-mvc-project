@@ -5,57 +5,106 @@ use Rakit\Validation\Validator;
 
 class OrderController {
 
+	/**
+	 * @throws ErrorException
+	 */
 	public function home() {
-		$data = Request::inputs();
+		$orders = new Order();
+		$orders = $orders->all();
 
-		view( 'pages.home', [ 'asd' => $asd ] );
+		view( 'pages.home', compact( 'orders' ) );
 	}
 
+	/**
+	 * @throws ErrorException
+	 */
 	public function contact() {
 		view( 'pages.contact-us' );
 	}
 
 
-	public function show() {
-
-	}
-
+	/**
+	 *  Storing Data
+	 */
 	public function store() {
 
 		$data       = Request::inputs();
 		$validator  = new Validator;
 		$validation = $validator->make( $data, [
-			'name'                => 'required',
-			'email'               => 'required|email',
-			'password'            => 'required|min:6',
-			'confirm_password'    => 'required|same:password',
-			'avatar'              => 'required|uploaded_file:0,500K,png,jpeg',
-			'skills'              => 'array',
-			'skills.*.id'         => 'required|numeric',
-			'skills.*.percentage' => 'required|numeric'
+			'amount'      => 'required|numeric|max:10',
+			'buyer'       => 'required|max:255',
+			'receipt_id'  => 'required|max:20',
+			'items'       => 'required|max:255',
+			'buyer_email' => 'required|email',
+			'note'        => 'required|max:255',
+			'city'        => 'required|max:20',
+			'phone'       => 'required|max:20',
+			'entry_by'    => 'required|numeric|max:10'
 		] );
-// then validate
+		// validate
 		$validation->validate();
-
 		if ( $validation->fails() ) {
-			// handling errors
-			$errors = $validation->errors();
-			echo "<pre>";
-			print_r( $errors->firstOfAll() );
-			echo "</pre>";
-			exit;
-		} else {
-			// validation passes
-			echo "Success!";
+			$errors = $validation->errors();;
+
+			return responseJson( [ 'data' => $errors->firstOfAll() ] );
 		}
 
-		view( 'pages.home' );
+		$order = new Order();
+		$order->insert( array_merge( $data, [
+			'hash_key' => hash( 'sha512', $data['receipt_id'] ),
+			'buyer_ip' => Request::ip(),
+			'entry_at' => date( 'Y-m-d' ),
+		] ) );
+
+		return responseJson( [ 'data' => 'ok', '' ] );
+
 	}
 
 
+	/**
+	 * Fetching Data
+	 */
 	public function get() {
-		$data = Request::inputs();
+		$order = new Order();
 
-		view( 'pages.home', [ 'asd' => $asd ] );
+		return responseJson( $order->all() );
+	}
+
+	public function getByDate() {
+		$data       = Request::inputs();
+		$validator  = new Validator;
+		$validation = $validator->make( $data, [
+			'from' => 'required|date',
+			'to'   => 'required|date',
+		] );
+		// validate
+		$validation->validate();
+		if ( $validation->fails() ) {
+			$errors = $validation->errors();;
+
+			return responseJson( [ 'data' => $errors->firstOfAll() ] );
+		}
+		$order = new Order();
+
+		return responseJson( $order->whereDate( 'entry_at', $data['from'], $data['to'] )->get() );
+	}
+
+	public function getByReciptId() {
+		$data       = Request::inputs();
+		$validator  = new Validator;
+		$validation = $validator->make( $data, [
+			'id' => 'required|numeric',
+		] );
+		// validate
+		$validation->validate();
+		if ( $validation->fails() ) {
+			$errors = $validation->errors();;
+
+			return responseJson( [ 'data' => $errors->firstOfAll() ] );
+		}
+		$order = new Order();
+
+		return responseJson( $order->where( 'receipt_id', '=', $data['id'] )->get() );
+
 	}
 }

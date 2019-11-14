@@ -36,3 +36,12 @@ function insert( $view ) {
 	}
 	require $path;
 }
+
+function responseJson( array $data ) {
+	header( 'Content-Type: application/json' );
+	echo json_encode( $data );
+}
+
+function redirect( $path ) {
+	header( "Location: /{$path}" );
+}

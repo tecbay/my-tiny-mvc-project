@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8e985cd-12f7-4fdf-aac6-50c5eaf340fe" name="Default Changelist" comment="" />
+    <list default="true" id="c8e985cd-12f7-4fdf-aac6-50c5eaf340fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foundation/db/create_table_first_time.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layout/footer.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layout/footer.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layout/header.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layout/header.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/home.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation/db/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/db/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +28,16 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="docker_php-apache-server:latest">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -21,10 +45,13 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1TPuolcNHzGdZYuFr738Ik9DQ1S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/pages" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
@@ -92,11 +119,25 @@
       <workItem from="1573547592255" duration="3992000" />
       <workItem from="1573557313404" duration="8409000" />
       <workItem from="1573578252411" duration="1978000" />
-      <workItem from="1573622167597" duration="9258000" />
+      <workItem from="1573622167597" duration="29836000" />
+      <workItem from="1573690323553" duration="4709000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

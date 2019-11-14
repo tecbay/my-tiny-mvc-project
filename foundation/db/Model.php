@@ -10,6 +10,7 @@ abstract class Model {
 	public function __construct() {
 		$this->pdo = Connection::make( config( 'database' ) );
 
+
 	}
 
 	public function __get( $name ) {
@@ -28,7 +29,9 @@ abstract class Model {
 		$val    = ':' . implode( ', :', array_keys( $data ) );
 		$sql    = "INSERT INTO $this->table ($fields) VALUES ($val)";
 		try {
-			return $this->pdo->prepare( $sql )->execute( $data );
+			return $this->pdo
+				->prepare( $sql )
+				->execute( $data );
 		} catch ( \Exception $e ) {
 			echo $e->getMessage();
 		}
@@ -50,6 +53,22 @@ abstract class Model {
 
 	public function whereBetween( string $column, string $max, string $min ) {
 		$sql = "SELECT * FROM $this->table WHERE $column BETWEEN $max AND $min";
+
+
+		try {
+			$q = $this->pdo
+				->prepare( $sql );
+			$q->execute();
+			$this->query = $q;
+
+			return $this;
+		} catch ( \Exception $e ) {
+			echo $e->getMessage();
+		}
+	}
+
+	public function whereDate( string $column, string $max, string $min ) {
+		$sql = "SELECT * FROM $this->table WHERE $column >= '" . $max . "' AND $column <= '" . $min . "'";
 
 
 		try {
