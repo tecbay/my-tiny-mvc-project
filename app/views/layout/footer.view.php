@@ -11,6 +11,10 @@
 <script>
 
     $(document).ready(function () {
+        function getCookie(key) {
+            var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+            return keyValue ? keyValue[2] : null;
+        }
 
         function setView(val_s) {
             if (val_s.length > 0) {
@@ -103,6 +107,7 @@
                     if (val_s === '"ok"') {
                         document.getElementById("order_add_form").reset();
                         getall();
+                        $('.bd-example-modal-lg').modal('hide');
                         alert("Order added successfully");
                     } else {
                         var val_s = JSON.parse(JSON.stringify(res.data));
@@ -135,6 +140,13 @@
             getall()
         })
 
+        $('#modelBtn').on('click', function () {
+            if (getCookie('isSubmitted')) {
+                alert('You already submit a order. Please try after 24 hours.')
+            } else {
+                $('.bd-example-modal-lg').modal('show');
+            }
+        });
     })
     ;
 </script>

@@ -29,11 +29,9 @@
                                 </button>
                             </div>
                             <div class="form-group col-md-1 offset-2">
-                                <p id="inputPassword4"
+                                <p id="modelBtn"
                                    style="margin-top: 40%"
-                                   class="btn btn-primary"
-                                   data-toggle="modal"
-                                   data-target=".bd-example-modal-lg">Add</p>
+                                   class="btn btn-primary">Add</p>
                             </div>
                         </div>
 

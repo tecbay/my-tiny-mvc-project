@@ -27,7 +27,9 @@ class OrderController {
 	 *  Storing Data
 	 */
 	public function store() {
-
+		if ( isset( $_COOKIE['isSubmitted'] ) ) :
+			return;
+		endif;
 		$data       = Request::inputs();
 		$validator  = new Validator;
 		$validation = $validator->make( $data, [
@@ -55,6 +57,9 @@ class OrderController {
 			'buyer_ip' => Request::ip(),
 			'entry_at' => date( 'Y-m-d' ),
 		] ) );
+
+
+		setcookie( 'isSubmitted', true, time() + ( 86400 ), "/" );
 
 		return responseJson( [ 'data' => 'ok', '' ] );
 

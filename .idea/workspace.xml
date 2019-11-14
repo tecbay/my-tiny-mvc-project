@@ -2,134 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8e985cd-12f7-4fdf-aac6-50c5eaf340fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/pages/404.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-docker-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xspeed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xspeed.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layout/footer.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layout/footer.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layout/header.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layout/header.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/contact-us.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/contact-us.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/pages/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/home.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/docker-entrypoint-initdb.d/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/docker-entrypoint-initdb.d/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/docker-entrypoint-initdb.d/createdb.sql.example" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/docker-entrypoint-initdb.d/createdb.sql.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/my.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php-apache/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php-apache/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php-apache/crontab" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php-apache/crontab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php-apache/laravel-queue.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php-apache/laravel-queue.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php-apache/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php-apache/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php-apache/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php-apache/startup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php-apache/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php-apache/supervisord.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/db/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/db/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/db/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/db/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/db/create_table_first_time.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/db/create_table_first_time.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/phpcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/phpcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Attribute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/ErrorBag.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/ErrorBag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/MimeTypeGuesser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/MimeTypeGuesser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/MissingRequiredParameterException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/MissingRequiredParameterException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/RuleNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/RuleNotFoundException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/RuleQuashException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/RuleQuashException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Accepted.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Accepted.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/After.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/After.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Alpha.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Alpha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/AlphaDash.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/AlphaDash.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/AlphaNum.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/AlphaNum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/AlphaSpaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/AlphaSpaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Before.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Before.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Between.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Between.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Callback.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Callback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Date.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Date.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Defaults.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Defaults.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Different.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Different.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Digits.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Digits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/DigitsBetween.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/DigitsBetween.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Extension.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Extension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/In.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/In.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Integer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Integer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Interfaces/BeforeValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Interfaces/BeforeValidate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Interfaces/ModifyValue.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Interfaces/ModifyValue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Ip.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Ip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Ipv4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Ipv4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Ipv6.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Ipv6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Json.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Lowercase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Lowercase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Max.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Max.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Mimes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Mimes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Min.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Min.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/NotIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/NotIn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Numeric.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Numeric.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Present.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Present.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Regex.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Regex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Required.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Required.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredIf.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredIf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredUnless.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredUnless.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWith.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWith.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWithAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWithAll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWithout.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWithout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWithoutAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/RequiredWithoutAll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Same.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Same.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Traits/DateUtilsTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Traits/DateUtilsTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Traits/FileTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Traits/FileTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Traits/SizeTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Traits/SizeTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/TypeArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/TypeArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/UploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/UploadedFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Uppercase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Uppercase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Rules/Url.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Traits/MessagesTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Traits/MessagesTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Traits/TranslationsTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Traits/TranslationsTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/rakit/validation/src/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/rakit/validation/src/Validator.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +41,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -237,7 +113,8 @@
       <workItem from="1573578252411" duration="1978000" />
       <workItem from="1573622167597" duration="29836000" />
       <workItem from="1573690323553" duration="7979000" />
-      <workItem from="1573699622890" duration="369000" />
+      <workItem from="1573699622890" duration="701000" />
+      <workItem from="1573730442762" duration="2501000" />
     </task>
     <servers />
   </component>
