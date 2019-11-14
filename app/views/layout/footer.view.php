@@ -12,6 +12,38 @@
 
     $(document).ready(function () {
 
+        function setView(val_s) {
+            if (val_s.length > 0) {
+                $("#tbody").html('');
+                var total = 0;
+                $.each(val_s, function (idx, topic) {
+                    total++
+                    var html = `<tr>
+                            <th scope="row">#${total}</th>
+                            <th scope="row">#${topic['id']}</th>
+                            <th>${topic['amount']}</th>
+                            <th>${topic['buyer']}</th>
+                            <th>${topic['receipt_id']}</th>
+                            <th>${topic['items']}</th>
+                            <th>${topic['buyer_email']}</th>
+                            <th>${topic['buyer_ip']}</th>
+                            <th>${topic['note']}</th>
+                            <th>${topic['city']}</th>
+                            <th>${topic['phone']}</th>
+                            <th class="hash_key">${topic['hash_key']}</th>
+                            <th>${topic['entry_at']}</th>
+                            <th>${topic['entry_by']}</th>
+                        </tr>`;
+                    $("#tbody").append(html);
+                });
+                $(".table").removeClass('invisible');
+                $(".no-found").addClass('invisible');
+                $(".total").html(`Total : ${total}`);
+            } else {
+                $(".table").addClass('invisible');
+                $(".no-found").removeClass('invisible');
+            }
+        }
 
         function getall() {
             $.ajax({
@@ -19,30 +51,7 @@
                 url: '/ajax/get/orders',
                 success: function (res) {
                     var val_s = JSON.parse(JSON.stringify(res));
-                    if (val_s.length > 0) {
-                        $("#tbody").html('');
-                        $.each(val_s, function (idx, topic) {
-                            var html = `<tr>
-                            <th scope="row">#${topic['id']}</th>
-                            <th>${topic['amount']}</th>
-                            <th>${topic['buyer']}</th>
-                            <th>${topic['receipt_id']}</th>
-                            <th>${topic['items']}</th>
-                            <th>${topic['buyer_email']}</th>
-                            <th>${topic['buyer_ip']}</th>
-                            <th>${topic['note']}</th>
-                            <th>${topic['city']}</th>
-                            <th>${topic['phone']}</th>
-                            <th class="hash_key">${topic['hash_key']}</th>
-                            <th>${topic['entry_at']}</th>
-                            <th>${topic['entry_by']}</th>
-                        </tr>`;
-                            $("#tbody").append(html);
-                        });
-                        $(".table").removeClass('invisible');
-                        $(".no-found").addClass('invisible');
-                    }
-
+                    setView(val_s)
                 }
             });
         }
@@ -50,9 +59,9 @@
         function getByDate() {
             var from_v = $("#from").val();
             var to_v = $("#to").val();
-
-            console.log(from_v);
-            console.log(to_v);
+            if (!from_v || !to_v) {
+                return
+            }
 
             $.ajax({
                 type: "GET",
@@ -60,76 +69,27 @@
                 data: {'from': from_v, 'to': to_v},
                 success: function (res) {
                     var val_s = JSON.parse(JSON.stringify(res));
-                    if (val_s.length > 0) {
-                        $("#tbody").html('');
-                        $.each(val_s, function (idx, topic) {
-                            var html = `<tr>
-                            <th scope="row">#${topic['id']}</th>
-                            <th>${topic['amount']}</th>
-                            <th>${topic['buyer']}</th>
-                            <th>${topic['receipt_id']}</th>
-                            <th>${topic['items']}</th>
-                            <th>${topic['buyer_email']}</th>
-                            <th>${topic['buyer_ip']}</th>
-                            <th>${topic['note']}</th>
-                            <th>${topic['city']}</th>
-                            <th>${topic['phone']}</th>
-                            <th class="hash_key">${topic['hash_key']}</th>
-                            <th>${topic['entry_at']}</th>
-                            <th>${topic['entry_by']}</th>
-                        </tr>`;
-                            $("#tbody").append(html);
-                        });
-                        $(".table").removeClass('invisible');
-                        $(".no-found").addClass('invisible');
-                    }
-
+                    setView(val_s)
                 }
             });
         }
 
-
-        function getByReciptId() {
-            var recipi_id = $("#id").value()
+        function getByReceiptId() {
+            var recipi_id = $("#id").val()
             $.ajax({
                 type: "GET",
-                url: '/ajax/get/orders/by-recipt-id',
+                url: '/ajax/get/orders/by-receipt-id',
                 data: {'id': recipi_id},
                 success: function (res) {
                     var val_s = JSON.parse(JSON.stringify(res));
-                    if (val_s.length > 0) {
-                        $("#tbody").html('');
-                        $.each(val_s, function (idx, topic) {
-                            var html = `<tr>
-                            <th scope="row">#${topic['id']}</th>
-                            <th>${topic['amount']}</th>
-                            <th>${topic['buyer']}</th>
-                            <th>${topic['receipt_id']}</th>
-                            <th>${topic['items']}</th>
-                            <th>${topic['buyer_email']}</th>
-                            <th>${topic['buyer_ip']}</th>
-                            <th>${topic['note']}</th>
-                            <th>${topic['city']}</th>
-                            <th>${topic['phone']}</th>
-                            <th class="hash_key">${topic['hash_key']}</th>
-                            <th>${topic['entry_at']}</th>
-                            <th>${topic['entry_by']}</th>
-                        </tr>`;
-                            $("#tbody").append(html);
-                        });
-                        $(".table").removeClass('invisible');
-                        $(".no-found").addClass('invisible');
-                    }
-
+                    setView(val_s)
                 }
             });
         }
 
         // Storing Data
         $("#order_add_form").submit(function (e) {
-
             e.preventDefault(); // avoid to execute the actual submit of the form.
-
             var form = $(this);
             var url = form.attr('action');
             $.ajax({
@@ -167,8 +127,12 @@
 
         //Filter by id
 
-        $("#id").on('change', function (e) {
-            alert('asd')
+        $("#id").on('input', function (e) {
+            getByReceiptId()
+        })
+
+        $("#reset").on('click', function (e) {
+            getall()
         })
 
     })

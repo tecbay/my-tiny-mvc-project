@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8e985cd-12f7-4fdf-aac6-50c5eaf340fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foundation/db/create_table_first_time.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layout/footer.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layout/footer.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layout/header.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layout/header.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/pages/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/home.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation/db/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/foundation/db/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +112,7 @@
       <workItem from="1573557313404" duration="8409000" />
       <workItem from="1573578252411" duration="1978000" />
       <workItem from="1573622167597" duration="29836000" />
-      <workItem from="1573690323553" duration="4709000" />
+      <workItem from="1573690323553" duration="6284000" />
     </task>
     <servers />
   </component>

@@ -70,6 +70,9 @@ class OrderController {
 		return responseJson( $order->all() );
 	}
 
+	/**
+	 *  Fatch By Date
+	 */
 	public function getByDate() {
 		$data       = Request::inputs();
 		$validator  = new Validator;
@@ -89,11 +92,14 @@ class OrderController {
 		return responseJson( $order->whereDate( 'entry_at', $data['from'], $data['to'] )->get() );
 	}
 
-	public function getByReciptId() {
+	/**
+	 * Get By Receipt Id.
+	 */
+	public function getByReceiptId() {
 		$data       = Request::inputs();
 		$validator  = new Validator;
 		$validation = $validator->make( $data, [
-			'id' => 'required|numeric',
+			'id' => 'required|max:20',
 		] );
 		// validate
 		$validation->validate();

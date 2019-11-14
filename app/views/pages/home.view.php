@@ -18,9 +18,9 @@
                                 <label for="to">To</label>
                                 <input type="date" class="form-control" name="to" id="to" placeholder="Password">
                             </div>
-                            <div class="form-group col-md-1">
+                            <div class="form-group col-md-2">
                                 <label for="id">By ID</label>
-                                <input type="number" name="id" class="form-control" id="id" placeholder="ID">
+                                <input type="text" name="id" class="form-control" id="id" placeholder="Receipt ID">
                             </div>
                             <div class="form-group col-md-1">
                                 <button type="button" id="reset"
@@ -28,7 +28,7 @@
                                         class="btn btn-warning">Reset
                                 </button>
                             </div>
-                            <div class="form-group col-md-1 offset-3">
+                            <div class="form-group col-md-1 offset-2">
                                 <p id="inputPassword4"
                                    style="margin-top: 40%"
                                    class="btn btn-primary"
@@ -45,10 +45,17 @@
         <hr>
         <div class="row">
             <div class="col-md-12">
+                <h4 class="total">Total : <?= count( $orders ) ?></h4>
+            </div>
+            <div class="col-md-12">
+
 				<?php $data = count( $orders ) > 0 ?? false; ?>
+                <h1 class="text-center text-black-50 mt-4 no-found <?= $data ? 'invisible' : '' ?>">No records
+                    found.</h1>
                 <table class="table  table-dark table-responsive <?= $data ? '' : 'invisible' ?>">
                     <thead>
                     <tr>
+                        <th scope="col">Serial</th>
                         <th scope="col">#id</th>
                         <th scope="col">amount</th>
                         <th scope="col">buyer</th>
@@ -65,8 +72,10 @@
                     </tr>
                     </thead>
                     <tbody id="tbody">
-					<?php foreach ( $orders as $order ): ?>
+					<?php $i = 0;
+					foreach ( $orders as $order ): $i ++ ?>
                         <tr>
+                            <th scope="row">#<?= $i ?></th>
                             <th scope="row">#<?= $order->id ?></th>
                             <th><?= $order->amount ?></th>
                             <th><?= $order->buyer ?></th>
@@ -84,8 +93,7 @@
 					<?php endforeach; ?>
                     </tbody>
                 </table>
-                <h1 class="text-center text-black-50 mt-4 no-found <?= $data ? 'invisible' : '' ?>">No records
-                    found.</h1>
+
 
             </div>
         </div>
